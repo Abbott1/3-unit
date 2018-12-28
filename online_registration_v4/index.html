@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Newsletter Signup</title>
+</head>
+<body>
+  <div class="heading">
+    <h1>THE CODE REVIEW</h1>
+  </div>
+
+  <h2>Signup for our newsletter</h2>
+
+  <p>Get the latest news on how your code is doing right in your inbox</p>
+
+<form>
+  <fieldset>
+    <legend>Contact Information</legend>
+
+    <div class="form-1">
+        <label for="full_name">Full Name</label>
+        <input type="text" name="full_name" id="full_name" placeholder="Required">
+
+        <label for="email_address">Email Address</label>
+        <input type="email" name="email_address" id="email_address" placeholder="Required">
+
+        <label for="phone_number">Phone Number</label>
+        <input type="tel" name="phone_number" id="phone_number">
+
+        <label for="street_address">Street Address</label>
+        <input type="text" name="street_address" id="street_address">
+
+        <label for="city">City</label>
+        <input type="text" name="city" id="city">
+
+        <label for="state">State</label>
+        <select name="state" id="state">
+            <option value=" " id="choose_state">Choose State</option>
+        </select>
+
+        <label for="zip_code">Zip Code</label>
+        <input type="text" name="zip_code" id="zip_code" >
+    </div>  
+  </fieldset>
+
+  <fieldset>
+
+    <legend>Newsletter</legend>
+    <div class="form-2">
+        <p>Select the newsletters you would like to recieve</p>
+
+        <div class="html_news">
+            <input type="checkbox" name="html_news" id="html_news" value="html_news">
+            <label for="html_news">HTML News</label>
+        </div>
+
+        <div class="css_news">
+            <input type="checkbox" name="css_news" id="css_news" value="css_news">
+            <label for="css_news">CSS News</label>
+        </div>
+
+        <div class="javascript_news">
+                <input type="checkbox" name="javascript_news" id="javascript_news" value="javascript_news">
+                <label for="javascript_news">JavaScript News</label>
+        </div>
+
+        <p>Newsletter format</p>
+
+        <div class="html_rad">
+            <input type="radio" name="html_rad" id="html_rad" value="html_rad">
+            <label for="html_rad">HTML</label>
+        </div>
+
+        <div class="plain_text">
+                <input type="radio" name="plain_text" id="plain_text" value="plain_text">
+                <label for="plain_text">Plain text</label>
+        </div>
+
+        <p>Other topics you'd like to hear about</p>
+
+        <textarea id="other" name="other"></textarea>
+        <button class="sign_up" type="submit">Sign Up</button>
+        <p>Copyright The Code Review</p>
+    </div>
+  </fieldset>
+</form>
+</body>
+</html>
