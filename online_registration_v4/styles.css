@@ -1,0 +1,11 @@
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 1.5em;
+    display: block;
+    width: 100%;
+    background: rgb(0, 0, 61);
+    color: white;
+}
