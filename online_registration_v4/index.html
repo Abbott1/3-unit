@@ -14,47 +14,62 @@
 
         <h2>Signup for our newsletter</h2>
 
-        <p>Get the latest news on how your code is doing right in your inbox</p>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
     </div>
 
 <form>
   <fieldset>
-    <legend>Contact Information</legend>
-
+     
+    <legend class="contact"><div class="top-border">Contact Information</div></legend>
+    
     <div class="form-1">
-        <label for="full_name">Full Name</label>
-        <input type="text" name="full_name" id="full_name" placeholder="Required">
+        <div class="name">
+            <label for="full_name">Full Name</label>
+            <input type="text" name="full_name" id="full_name" placeholder="Required">
+        </div>
 
-        <label for="email_address">Email Address</label>
-        <input type="email" name="email_address" id="email_address" placeholder="Required">
+        <div class="email">
+            <label for="email_address">Email Address</label>
+            <input type="email" name="email_address" id="email_address" placeholder="Required">
+        </div>
+        
+        <div class="phone">
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" name="phone_number" id="phone_number">
+        </div> 
 
-        <label for="phone_number">Phone Number</label>
-        <input type="tel" name="phone_number" id="phone_number">
+        <div class="address">
+            <label for="street_address">Street Address</label>
+            <input type="text" name="street_address" id="street_address">
+        </div> 
 
-        <label for="street_address">Street Address</label>
-        <input type="text" name="street_address" id="street_address">
+        <div class="city-input">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+        </div> 
 
-        <label for="city">City</label>
-        <input type="text" name="city" id="city">
-
-        <label for="state">State</label>
-        <select name="state" id="state">
-            <option value=" " id="choose_state">Choose State</option>
-        </select>
-
-        <label for="zip_code">Zip Code</label>
-        <input type="text" name="zip_code" id="zip_code" >
+        <div class="state-input">
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value=" " id="choose_state">Choose State</option>
+            </select>
+        </div>
+        
+        <div class="zip-input">
+            <label for="zip_code">Zip Code</label>
+            <input type="text" name="zip_code" id="zip_code">
+        </div> 
     </div>  
   </fieldset>
 
   <fieldset>
 
-    <legend>Newsletter</legend>
+    <legend class="newsletter">Newsletter</legend>
     <div class="form-2">
         <p>Select the newsletters you would like to recieve</p>
 
         <div class="html_news">
-            <input type="checkbox" name="html_news" id="html_news" value="html_news">
+            <input type="checkbox" name="html_news" id="html_news" value="html_newsletter">
             <label for="html_news">HTML News</label>
         </div>
 
@@ -84,7 +99,9 @@
 
         <textarea id="other" name="other"></textarea>
         <button class="sign_up" type="submit">Sign Up</button>
-        <p>Copyright The Code Review</p>
+        <div class="copyright">
+            <p>Copyright The Code Review</p>
+        </div>
     </div>
   </fieldset>
 </form>
