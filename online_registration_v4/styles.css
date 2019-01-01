@@ -3,8 +3,21 @@ body {
     padding: 0;
 }
 
+.top-border {
+    border: 3px solid rgb(47, 47, 64);
+    width: 95%;
+    margin: 20px 0 2px 0;
+}
+
+.bottom-border {
+    border: 1px solid rgb(47, 47, 64);
+    width: 96%;
+    margin-bottom: 20px;
+}
+
 fieldset {
     border: 0px;
+  
 }
 
 form {
@@ -23,7 +36,7 @@ form {
     font-size: 1.5em;
     display: block;
     width: 100%;
-    background: rgb(47, 47, 64, 1);
+    background: rgb(47, 47, 64);
     color: white;
     padding-top: 25px;
     padding-bottom: 25px;
@@ -31,7 +44,7 @@ form {
 }
 
 .heading h2 {
-    color: rgb(47, 47, 64, 1);
+    color: rgb(47, 47, 64);
 }
 
 .heading p {
@@ -60,20 +73,10 @@ form {
 }
 
 #zip_code {
-    width: 50%;
-    display: block;
+    width: 80%;
 }
 
-.top-border {
-    border-top: 2px solid rgb(47, 47, 64, 1);
-    width: 100%;
-}
 
-.contact {
-    padding: 2px;
-    border-top: 5px solid rgb(47, 47, 64, 1);
-    width: 100%;
-}
 
 .sign_up {
     width: 100%;
@@ -91,13 +94,79 @@ form {
 }
 
 legend {
-    color: rgb(47, 47, 64, 1);
+    color: rgb(47, 47, 64);
     font-size: 1.5em;
     font-weight: bold;
 }
 
 .newsletter {
-    border-top: 2px solid rgb(47, 47, 64, 1);
+    border-top: 2px solid rgb(47, 47, 64);
     width: 100%;
     padding-top: 20px;
+}
+
+/*=================================================================
+            MEDIA QUERIES
+===================================================================*/
+
+@media(min-width: 768px) {
+
+    form {
+       width: 70%;
+       margin: 0 auto;
+    }
+
+    .top-border {
+        border: 3px solid rgb(47, 47, 64);
+        width: 99%;
+        margin: 20px 0 2px 0;
+    }
+    
+    .bottom-border {
+        border: 1px solid rgb(47, 47, 64);
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #full_name {
+        width: 75%;
+        margin-left: 50px;
+    }
+
+    #email_address {
+        width: 76%;
+        margin-left: 20px;
+    }
+
+    #phone_number {
+        width: 76%;
+        margin-left: 18px;
+    }
+
+    #street_address {
+        width: 76%;
+        margin-left: 20px;
+    }
+
+    #city {
+        width: 77%;
+        margin-left: 82px;
+    }
+
+    #state {
+        width: 76%;
+        margin-left: 83px;
+    }
+
+    #zip_code {
+        width: 25%;
+        margin-left: 57px;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
 }
