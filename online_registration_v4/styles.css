@@ -5,14 +5,14 @@ body {
 
 .top-border {
     border: 3px solid rgb(47, 47, 64);
-    width: 95%;
-    margin: 20px 0 2px 0;
+    width: 90%;
+    margin: 20px 0 2px 14px;
 }
 
 .bottom-border {
     border: 1px solid rgb(47, 47, 64);
-    width: 96%;
-    margin-bottom: 20px;
+    width: 91%;
+    margin: 0 0 20px 14px;
 }
 
 fieldset {
@@ -50,6 +50,10 @@ form {
 .heading p {
     color: rgb(184, 182, 182);  
 }
+input::placeholder {
+    text-align: right;
+    padding-right: 10px;
+}
 
 #full_name,
 #email_address,
@@ -74,6 +78,7 @@ form {
 
 #zip_code {
     width: 80%;
+    margin-right: 70px;
 }
 
 
@@ -97,6 +102,7 @@ legend {
     color: rgb(47, 47, 64);
     font-size: 1.5em;
     font-weight: bold;
+
 }
 
 .newsletter {
@@ -121,11 +127,15 @@ legend {
         width: 99%;
         margin: 20px 0 2px 0;
     }
-    
+
     .bottom-border {
         border: 1px solid rgb(47, 47, 64);
         width: 100%;
-        margin-bottom: 20px;
+        margin: 2px 0 20px 0;
+    }
+
+    .contact {
+        margin: 20px 0;
     }
 
     #full_name {
@@ -134,27 +144,27 @@ legend {
     }
 
     #email_address {
-        width: 76%;
+        width: 75%;
         margin-left: 20px;
     }
 
     #phone_number {
-        width: 76%;
+        width: 75%;
         margin-left: 18px;
     }
 
     #street_address {
-        width: 76%;
+        width: 75%;
         margin-left: 20px;
     }
 
     #city {
-        width: 77%;
-        margin-left: 82px;
+        width: 75%;
+        margin-left: 86px;
     }
 
     #state {
-        width: 76%;
+        width: 75%;
         margin-left: 83px;
     }
 
