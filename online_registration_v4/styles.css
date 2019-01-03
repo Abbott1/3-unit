@@ -1,34 +1,37 @@
 body {
     margin: 0 auto;
     padding: 0;
+    font-family: 'Merriweather', serif;
 }
 
 .top-border {
     border: 3px solid rgb(47, 47, 64);
-    width: 90%;
-    margin: 20px 0 2px 14px;
+    width: 93%;
+    margin: 20px 0 2px 0px;
 }
 
 .bottom-border {
     border: 1px solid rgb(47, 47, 64);
-    width: 91%;
-    margin: 0 0 20px 14px;
+    width: 94%;
+    margin: 0 0 20px 0px;
 }
 
 fieldset {
     border: 0px;
+    padding: 0px;
   
 }
 
 form {
     width: 100%;
     resize: both;
-    overflow: auto; 
+    overflow: auto;
 }
 
 .heading {
     text-align: center;
     width: 100%;
+    font-size: 1em;
       
 }
 
@@ -49,7 +52,9 @@ form {
 
 .heading p {
     color: rgb(184, 182, 182);  
+    padding: 11px;
 }
+
 input::placeholder {
     text-align: right;
     padding-right: 10px;
@@ -67,9 +72,21 @@ input::placeholder {
     text-decoration: none;
     border: none;
     border-radius: 4px;
-    width: 100%;
+    width: 95%;
     height: 50px;
     margin: 10px 0 10px;
+}  
+
+#full_name,
+#email_address,
+#phone_number,
+#street_address,
+#city,
+#state,
+#zip_code,
+#other,:focus {
+    border: 1px solid #56b4ef;
+    box-shadow: 0px 0px 3px 1px #c8def0;
 }
 
 #other {
@@ -77,14 +94,14 @@ input::placeholder {
 }
 
 #zip_code {
-    width: 80%;
+    width: 55%;
     margin-right: 70px;
 }
 
 
 
 .sign_up {
-    width: 100%;
+    width: 96%;
     margin-top: 20px;
     height: 50px;
     background-color: #3acec2;
@@ -100,14 +117,14 @@ input::placeholder {
 
 legend {
     color: rgb(47, 47, 64);
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
-
+    padding-bottom: 20px;
 }
 
 .newsletter {
     border-top: 2px solid rgb(47, 47, 64);
-    width: 100%;
+    width: 93%;
     padding-top: 20px;
 }
 
@@ -139,38 +156,50 @@ legend {
     }
 
     #full_name {
-        width: 75%;
-        margin-left: 50px;
+        width: 72%;
+        margin-left: 60px;
     }
 
     #email_address {
-        width: 75%;
-        margin-left: 20px;
+        width: 72%;
+        margin-left: 29px;
     }
 
     #phone_number {
-        width: 75%;
-        margin-left: 18px;
+        width: 72%;
+        margin-left: 24px;
     }
 
     #street_address {
-        width: 75%;
-        margin-left: 20px;
+        width: 72%;
+        margin-left: 27px;
     }
 
     #city {
-        width: 75%;
-        margin-left: 86px;
+        width: 72%;
+        margin-left: 110px;
     }
 
     #state {
-        width: 75%;
-        margin-left: 83px;
+        width: 72%;
+        margin-left: 103px;
     }
 
     #zip_code {
         width: 25%;
-        margin-left: 57px;
+        margin-left: 75px;
+    }
+
+    #other {
+        width: 99%;
+    }
+
+    .newsletter {
+        width: 99%;
+    }
+
+    .sign_up {
+        width: 100%;
     }
 
     .clearfix:after {
